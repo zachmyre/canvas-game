@@ -1,3 +1,7 @@
+:root {
+  --border-radius-global: 25px;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -6,8 +10,56 @@ body {
   margin: 0;
   overflow: hidden;
   background-color: pink;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #canvas {
   background-color: #000000;
+}
+
+#errorContainer{
+  display: hidden;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-radius: var(--border-radius-global);
+  border: 2px solid red;
+}
+
+#playerMenu{
+  background-color: white;
+  width: 50vw;
+  height: 50vh;
+  border: none;
+  border-radius: var(--border-radius-global);
+}
+
+.formSection{
+  padding: 8px;
+}
+
+.formSection label{
+  font-weight: bold;
+}
+
+.formSection input{
+  width: 90%;
+  padding: 6px;
+  margin: 8px;
+  border: 1px solid pink;
+  border-radius: var(--border-radius-global);
+}
+
+#playerMenu button{
+  padding: 6px;
+  margin: 8px;
+  width: 100%;
+  background-color: pink;
+  border: none;
+  border-radius: var(--border-radius-global);
+}
+
+#playerMenu button:hover{
+  opacity: .5;
+  cursor: pointer;
 }

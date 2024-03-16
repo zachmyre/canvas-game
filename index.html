@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <dialog id="playerMenu">
+      <h2>Player Menu</h2>
+      <form id="playerMenuForm">
+        <div id="errorsContainer"></div>
+        <section class="formSection">
+        <label>Name:</label>
+        <input required name="name" type="text" />
+      </section>
+        <section class="formSection">
+        <label>Color:</label>
+        <input name="color" type="color" />
+      </section>
+      <button type="submit">Play</button>
+      </form>
+    </dialog>
     <canvas id="canvas"></canvas>
     <script src="game.js"></script>
   </body>
